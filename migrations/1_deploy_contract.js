@@ -6,7 +6,7 @@ module.exports  = async (deployer, network, accounts)=>{
   const wallet = await Wallet.deployed();
   console.log("Deployed wallet is @:" + wallet.address)
 
-  await deployer.deploy(Token, "TestTolìken", "TT1", 1000000); 
+  await deployer.deploy(Token, "TestToken", "TT1", 1000000); 
   const token = await Wallet.deployed();
   console.log("Deployed Token address(0) :",token.address)
 }
